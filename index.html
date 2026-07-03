@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinPath — AI Financial Coach</title>
+    <meta
+      name="description"
+      content="A bilingual platform that combines AI financial coaching, brokerage referrals, and a paid community for first-time investors."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#">FinPath</a>
+      <div class="lang-switch" aria-label="Language switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">AI-guided financial starter for first-time investors</p>
+          <h1 data-i18n="heroTitle">From $0 to your first investment with a trusted coach.</h1>
+          <p class="hero-text" data-i18n="heroText">
+            A bilingual platform that blends coaching, brokerage guidance, and a supportive community to help people start building wealth step by step.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#journey" data-i18n="ctaPrimary">Start my plan</a>
+            <a class="btn secondary" href="#products" data-i18n="ctaSecondary">Explore the model</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2 data-i18n="cardTitle">The three-part experience</h2>
+          <ul>
+            <li data-i18n="cardItem1">AI coaching that guides you from zero to first investment</li>
+            <li data-i18n="cardItem2">Brokerage comparisons and account setup support</li>
+            <li data-i18n="cardItem3">A paid community for accountability and live Q&amp;A</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <h2 class="section-title" data-i18n="productsTitle">One platform, three growth engines</h2>
+        <div class="grid">
+          <article class="card product-card">
+            <h3 data-i18n="productCoachTitle">AI Financial Coach</h3>
+            <p data-i18n="productCoachText">
+              Personalized roadmaps for emergency funds, Roth IRAs, index funds, and long-term investing with bilingual support.
+            </p>
+          </article>
+          <article class="card product-card">
+            <h3 data-i18n="productBrokerageTitle">Brokerage Referral Platform</h3>
+            <p data-i18n="productBrokerageText">
+              Compare brokerages, recommend the best fit, and help users open and fund accounts with referral commissions.
+            </p>
+          </article>
+          <article class="card product-card">
+            <h3 data-i18n="productCommunityTitle">Paid Investing Community</h3>
+            <p data-i18n="productCommunityText">
+              Offer live Q&amp;A, monthly challenges, accountability groups, and premium workshops for recurring revenue.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="journey" class="section">
+        <h2 class="section-title" data-i18n="journeyTitle">Your roadmap from beginner to first investment</h2>
+        <div class="steps">
+          <article class="step-card">
+            <h3 data-i18n="step1Title">1. Build confidence</h3>
+            <p data-i18n="step1Text">Learn the basics of budgeting, debt, and emergency savings without pressure.</p>
+          </article>
+          <article class="step-card">
+            <h3 data-i18n="step2Title">2. Create the foundation</h3>
+            <p data-i18n="step2Text">Set a starter emergency fund and define a realistic monthly investing rhythm.</p>
+          </article>
+          <article class="step-card">
+            <h3 data-i18n="step3Title">3. Open the first account</h3>
+            <p data-i18n="step3Text">Choose a brokerage, open an account, and fund it with guidance from the platform.</p>
+          </article>
+          <article class="step-card">
+            <h3 data-i18n="step4Title">4. Invest with intention</h3>
+            <p data-i18n="step4Text">Start with a simple index fund plan and keep learning through the community.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section planner">
+        <div class="planner-card card">
+          <h2 data-i18n="plannerTitle">Make the next move</h2>
+          <label for="monthlySavings" data-i18n="plannerLabel">How much could you save each month?</label>
+          <input id="monthlySavings" type="number" min="0" step="10" value="100" />
+          <p id="planResult" class="plan-result"></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="revenueTitle">Revenue model that can scale</h2>
+        <div class="grid revenue-grid">
+          <article class="card revenue-card">
+            <h3 data-i18n="revenue1Title">Premium coaching</h3>
+            <p data-i18n="revenue1Text">Monthly subscriptions for guided plans, premium courses, and workshops.</p>
+          </article>
+          <article class="card revenue-card">
+            <h3 data-i18n="revenue2Title">Brokerage referrals</h3>
+            <p data-i18n="revenue2Text">Earn commissions when users open and fund qualified accounts.</p>
+          </article>
+          <article class="card revenue-card">
+            <h3 data-i18n="revenue3Title">Membership community</h3>
+            <p data-i18n="revenue3Text">Charge for live Q&amp;A, accountability circles, and sponsored events.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
